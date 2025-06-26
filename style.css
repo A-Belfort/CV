@@ -8,11 +8,19 @@ body {
     flex-direction: column;
 }
 
-a {
-    color: aquamarine;
-}
-
 .mainbody {
     text-align: left;
     width: auto;
+}
+
+.navbar {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: cornflowerblueS;
+}
+
+li {
+    display: inline;
 }
