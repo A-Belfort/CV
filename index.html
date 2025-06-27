@@ -122,6 +122,94 @@
                 <h3>GitHub</h3>
             </div>
         </div>
+        <div style ="display: none;" class="mainbody" id="enbody">
+            <h2>ABOUT</h2>
+            <div class="sect" id="home">
+                <div class="cropper">
+                    <img style="max-height: 300px;" src="img/foto.jpg"/>
+                </div>
+                <div style="width: 50%;">
+                    <p>My name is <strong>Arthur Belfort</strong>!</p>
+                    <p>I'm 25 years old and I'm a <strong>Analysis and Development of Systems</strong> at SENAC.</p>
+                    <p>I always liked using my creativity to solve problems and I'm always challenging myself to learn something new,
+                        using personal projects as a boost.</p>
+                    <p>I'm a person who likes to tackle things hands-on and that is not afraid of experimenting and iterating until I can reach a satisfactory result,
+                        always adjusting and incrementing the tiniest details without any artificial third-party.</p>
+                </div>
+            </div>
+            
+            <h2>EDUCATION</h2>
+            <div class="sect" id="degrees">
+                <div style="width: 45%;">
+                    <img style="max-width: 140px;" src="img/csschool-logo.png"/>
+                    <h3><u>CESAR SCHOOL</u></h3>
+                        <p>Computer Science</p>
+                        <h4>2018 - 2019</h4>
+                        <p>Design</p>
+                        <h4>2019 - 2022</h4>
+                </div>
+                <div style="width: 45%;">
+                    <img style="max-width: 140px;" src="img/senac-logo.png"/>
+                    <h3><u>SENAC</u></h3>
+                        <p>Analysis and Development of Systems</p>
+                    <h4>2025 - 2027</h4>
+                </div>
+            </div> 
+            
+            <h2>EXPERIENCE</h2>
+            <div class="sect" id="experience">
+                    <h3>Integrating Project (Senac)</h3>
+                    <p>Através do projeto integrador do Senac, tive a oportunidade de trabalhar no projeto <strong>Eco Barber</strong> junto com colegas de classe.</p>
+                    <p><strong>Eco Barber</strong> é um aplicativo desenvolvido para promover a gestão ambiental consciente em barbearias, conectando barbeiros a empresas parceiras
+                         responsáveis pela coleta, transporte, tratamento e destinação final de resíduos como lâminas, cabelos, embalagens e produtos químicos.</p>
+                    <p>Veja uma atividade em Python do nosso projeto <a href="https://github.com/A-Belfort/RecycleBarber">aqui!</a></p>
+                    <hr>
+                    <h3>Residência Tecnológica do Porto Digital</h3>
+                    <p>Durante a Residência Tecnológica do Porto Digital, fiz parte do <strong>+um</strong> (lê-se "mais um").</p>
+                    <p><strong>+um</strong> é um aplicativo que conecta quem cuida com quem precisa de cuidado, visando criar pontes entre profissionais de saúde mental qualificados
+                        com clientes que necessitam de ajuda para cuidar de vícios (seja vício em aposta, alcoolismo, tabagismo).</p>
+                    <hr>
+                    <h3>Currículo no Figma</h3>
+                    <p>Durante a cadeira de Design de Interação no primeiro período de Análise e Desenvolvimento de Sistemas no Senac, montei um currículo no Figma, focando em projetos que vão mais pro lado de Design.</p>
+                    <p>É possível dar uma conferida <a href="https://www.figma.com/proto/YbNxOyo1Hn52fq3a5qx1DA/Currículo-%7C-Design-de-Interação-%7C-Arthur-Belfort?node-id=29-162&starting-point-node-id=1%3A2">aqui!</a></p>
+            </div>
+
+            <h2>HABILIDADES</h2>
+            <div class="sect" id="skills">
+                <h3>Sou proficiente em:</h3>
+                <div style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                    <img class="icon" src="img/skill-python.png">
+                    <img class="icon" src="img/skill-godot.png">
+                    <img class="icon" src="img/skill-figma.png">
+                </div>
+                <hr>
+                <h3>Estou aprendendo:</h3>
+                <div style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                    <img class="icon" src="img/skill-html.png">
+                    <img class="icon" src="img/skill-css.png">
+                    <img class="icon" src="img/skill-js.png">
+                    <img class="icon" src="img/skill-blender.png">
+                </div>
+                <hr>
+                <h3>Outras habilidades:</h3>
+                <p>Inglês (fluente), Espanhol (básico), Metodologias Agéis</p>
+            </div>
+
+            <h2>OBJETIVO</h2>
+            <div class="sect" id="objective">
+                <p>Busco crescer como profissional e desenvolvedor, além de expandir minhas habilidades para o máximo de seu potencial.</p>
+            </div>
+            
+            <h2>CONTATO</h2>
+            <div class="sect" id="contact">
+                <br>
+                <a href="https://www.linkedin.com/in/arthur-belfort-bb1165168/"><img class="icon" src="img/linkedin.png"></a>
+                <h3>LinkedIn</p>
+                <br>
+                <a href="https://github.com/A-Belfort"><img class="icon" src="img/github.png"></a>
+                <h3>GitHub</h3>
+            </div>
+        </div>
     </body>
 
     <script>
@@ -136,9 +224,13 @@
             if (lang == "en") {
                 document.getElementById("ptnav").style.display = "none";
                 document.getElementById("ennav").style.display = "flex";
+                document.getElementById("ptbody").style.display = "none";
+                document.getElementById("enbody").style.display = "block";
             } else {
                 document.getElementById("ptnav").style.display = "flex";
                 document.getElementById("ennav").style.display = "none";
+                document.getElementById("ptbody").style.display = "block";
+                document.getElementById("enbody").style.display = "none";
             };
         };
     </script>
