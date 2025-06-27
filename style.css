@@ -5,7 +5,7 @@
 
 body {
     color: rgb(255, 255, 255);
-    background-color: rgb(10, 66, 130);
+    background-color: rgb(79, 106, 189);
     font-family: jetbrains;
     display: flex; 
     align-items: center; 
@@ -46,7 +46,7 @@ h2 {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(224, 155, 51);
+    background-color: rgb(26, 46, 94);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
 }
 
@@ -94,11 +94,13 @@ h2 {
 }
 
 .cropper {
-  width: auto;
-  height: auto;
-  overflow: hidden;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
 }
 
 #degrees {
@@ -111,6 +113,13 @@ h2 {
     display: block;
     text-align: center;
     align-content: center;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon {
