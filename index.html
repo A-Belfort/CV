@@ -2,58 +2,136 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <title>TEST</title>
+        <title>Arthur Belfort</title>
     </head> 
     
-        <body >
-            <div class="navbar">
+    <body>
+        <div class="navbar">
+            <div class="innernav" id="ptnav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#degrees">Formação</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li onclick="scrollToDiv('home')"><a>Sobre</a></li>
+                    <li onclick="scrollToDiv('degrees')"><a>Formação</a></li>
+                    <li onclick="scrollToDiv('experience')"><a>Experiência</a></li>
+                    <li onclick="scrollToDiv('skills')"><a>Habilidades</a></li>
+                    <li onclick="scrollToDiv('contact')"><a>Contato</a></li>
+                </ul>
+                <ul>
+                    <li><a onclick="changeLanguage('en')">English</a></li>
                 </ul>
             </div>
-            <div class="mainbody">
-                <h1>BEM-VINDO</h1>
-                    <div id="home" style="display: flex; flex-direction: row;">
-                        <div style="width: 45%;">
-                            <p>Meu nome é Arthur! Tenho 25 anos e sou estudante de Análise e Desenvolvimento de Sistemas.</p>
-                        </div>
-                        <div style="width: 45%;">
-                            minha foto aq
-                        </div>
-                    </div>
-                <hr>
-                <div id="degrees">
-                    <h2>FORMAÇÃO</h2>
-                        <h3><u>CESAR SCHOOL</u></h3>
-                            <p>Ciência da Computação</p>
-                            <h4>2018 - 2019</h4>
-                            <p>Design</p>
-                            <h4>2019 - 2022</h4>
-                        <h3><u>SENAC</u></h3>
-                            <p>Análise e Desenvolvimento de Sistemas</p>
-                        <h4>2025 - 2027</h4>
-                    <hr>
+            <div class="innernav" style="display: none;" id="ennav">
+                <ul>
+                    <li onclick="scrollToDiv('home')"><a>About</a></li>
+                    <li onclick="scrollToDiv('degrees')"><a>Education</a></li>
+                    <li onclick="scrollToDiv('experience')"><a>Experience</a></li>
+                    <li onclick="scrollToDiv('skills')"><a>Skills</a></li>
+                    <li onclick="scrollToDiv('contact')"><a>Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a onclick="changeLanguage('ptbr')">Português</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainbody" id="ptbody">
+
+            <h2>SOBRE</h2>
+            <div class="sect" id="home">
+                <div style="width: 50%;">
+                    <p>Meu nome é <strong>Arthur Belfort</strong>!</p>
+                    <p>Tenho 25 anos e atualmente sou estudante de <strong>Análise e Desenvolvimento de Sistemass</strong> pelo SENAC.</p>
                 </div>
-                    <h2>EXPERIÊNCIAS</h2>
-                    <h3>Projeto Integrador (Senac)</h3>
-                    <h3>Residência Digital</h3>
-                    <hr>
-                <div id="skills">
-                    <h2>HABILIDADES</h2>
-                    <hr>
-                </div>
-                <div id="contact">
-                    <h2>CONTATO</h2>
-                    <ul>
-                        <li>e-mail: arthur.belfort.fer@gmail.com</li>
-                        <li>Telefone: (81) 9 8287-4509</li>
-                    </ul>
+                <div class="cropper">
+                    <img style="max-height: 300px;" src="img/foto.jpg"/>
                 </div>
             </div>
-        </body>
+            
+            <h2>FORMAÇÃO</h2>
+            <div class="sect" id="degrees">
+                <div style="width: 45%;">
+                    <img style="max-width: 140px;" src="img/csschool-logo.png"/>
+                    <h3><u>CESAR SCHOOL</u></h3>
+                        <p>Ciência da Computação</p>
+                        <h4>2018 - 2019</h4>
+                        <p>Design</p>
+                        <h4>2019 - 2022</h4>
+                </div>
+                <div style="width: 45%;">
+                    <img style="max-width: 140px;" src="img/senac-logo.png"/>
+                    <h3><u>SENAC</u></h3>
+                        <p>Análise e Desenvolvimento de Sistemas</p>
+                    <h4>2025 - 2027</h4>
+                </div>
+                    
+            </div> 
+            <hr>
+            
+            <h2>EXPERIÊNCIAS</h2>
+            <div class="sect" id="experience">
+                    <h3>Projeto Integrador (Senac)</h3>
+                    <p>Através do projeto integrador do Senac, tive a oportunidade de trabalhar no projeto <strong>Eco Barber</strong> junto com colegas de classe.</p>
+                    <p><strong>Eco Barber</strong> é um aplicativo desenvolvido para promover a gestão ambiental consciente em barbearias, conectando barbeiros a empresas parceiras
+                         responsáveis pela coleta, transporte, tratamento e destinação final de resíduos como lâminas, cabelos, embalagens e produtos químicos.</p>
+                    <p>Veja uma atividade em Python do nosso projeto <a href="https://github.com/A-Belfort/RecycleBarber">aqui!</a></p>
+                    <hr>
+                    <h3>Residência Tecnológica do Porto Digital</h3>
+                    <p>Durante a Residência Tecnológica do Porto Digital, fiz parte do <strong>+um</strong> (lê-se "mais um").</p>
+                    <p><strong>+um</strong> é um aplicativo que conecta quem cuida com quem precisa de cuidado, visando criar pontes entre profissionais de saúde mental qualificados
+                        com clientes que necessitam de ajuda para cuidar de vícios (seja vício em aposta, alcoolismo, tabagismo).</p>
+                    <hr>
+                    <h3>Currículo no Figma</h3>
+                    <p>Durante a cadeira de Design de Interação no primeiro período de Análise e Desenvolvimento de Sistemas no Senac, montei um currículo no Figma, focando em projetos que vão mais pro lado de Design.</p>
+                    <p>É possível dar uma conferida <a href="https://www.figma.com/proto/YbNxOyo1Hn52fq3a5qx1DA/Currículo-%7C-Design-de-Interação-%7C-Arthur-Belfort?node-id=29-162&starting-point-node-id=1%3A2">aqui!</a></p>
+            </div>
+            <hr>
+
+            <h2>HABILIDADES</h2>
+            <div class="sect" id="skills">
+                <h3>Sou proficiente em:</h3>
+                <div style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                    <img class="icon" src="img/skill-python.png">
+                    <img class="icon" src="img/skill-godot.png">
+                    <img class="icon" src="img/skill-figma.png">
+                </div>
+                <hr>
+                <h3>Estou aprendendo:</h3>
+                <div style="display: flex; justify-content: space-evenly; margin-bottom: 20px;">
+                    <img class="icon" src="img/skill-html.png">
+                    <img class="icon" src="img/skill-css.png">
+                    <img class="icon" src="img/skill-js.png">
+                    <img class="icon" src="img/skill-blender.png">
+                </div>
+                <hr>
+                <h3>Outras habilidades:</h3>
+                <p>Inglês (fluente), Espanhol (básico), Metodologias Agéis</p>
+            </div>
+            <hr>
+            
+            <h2>CONTATO</h2>
+            <div class="sect" id="contact">
+                <ul>
+                    <li>e-mail: arthur.belfort.fer@gmail.com</li>
+                    <li>Telefone: (81) 9 8287-4509</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
     <script>
+        function scrollToDiv(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function changeLanguage(lang) {
+            if (lang == "en") {
+                document.getElementById("ptnav").style.display = "none";
+                document.getElementById("ennav").style.display = "flex";
+            } else {
+                document.getElementById("ptnav").style.display = "flex";
+                document.getElementById("ennav").style.display = "none";
+            };
+        };
     </script>
 </html>

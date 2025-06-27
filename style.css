@@ -1,28 +1,60 @@
+@font-face {
+    font-family: jetbrains;
+    src: url("fonts/JetBrainsMono-Regular.ttf");
+}
+
 body {
-    color: rgb(0, 0, 0);
-    background-color: rgb(236, 236, 236);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 66, 130);
+    font-family: jetbrains;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     flex-direction: column;
 }
 
+
 .mainbody {
-    padding: 10px;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align: left;
     width: auto;
-    background-color: #ffffff;
+    max-width: 800px;
+}
+
+.sect {
+    color: black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
+    margin-bottom: 30px;
+}
+
+hr {
+    width: 70%;
+}
+
+h2 {
+    text-align: center;
 }
 
 .navbar {
-    padding: 10px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: cornflowerblue;
+    background-color: rgb(224, 155, 51);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
+}
+
+.innernav {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .navbar a:hover {
@@ -46,4 +78,42 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+#home {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#home img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.cropper {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px 0px;
+}
+
+#degrees {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#skills {
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+.icon {
+    max-width: 100px;
+    max-height: 100px;
 }
